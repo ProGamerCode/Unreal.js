@@ -281,6 +281,7 @@ function main() {
                 ),
                 $link:elem => {
                     elem.JavascriptContext = Context
+                    elem.EntryWidgetClass = WidgetBlueprint.Load('/Game/JavascriptUserObjectListEntry_BP.JavascriptUserObjectListEntry_BP').GeneratedClass
                     elem.alive = true
                     elem.proxy = {
                         OnSelectionChanged: item => contexts.setCurrent(item)
@@ -395,6 +396,7 @@ function main() {
                         ],
                         $link:elem => {
                             elem.JavascriptContext = Context
+                            elem.EntryWidgetClass = WidgetBlueprint.Load('/Game/JavascriptUserObjectListEntry_BP.JavascriptUserObjectListEntry_BP').GeneratedClass
                             elem.alive = true
                             elem.proxy = {
                                 OnDoubleClick : item => item.actions.install(),
